@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///C:/Users/jayar/Downloads/finn%20aaa.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jayaraj Daniel — Graphic Designer</title>
+  <link href="./finn aaa_files/css2" rel="stylesheet">
+  <style>
+    :root {
+      --accent1:#2563eb; --accent2:#e11d48;
+      --text:#1a1a1a; --muted:#555; --bg:#fff;
+      --radius:14px; --fw:'Inter',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--fw);background:var(--bg);color:var(--text);line-height:1.6}
+    nav{position:fixed;top:0;left:0;width:100%;background:#fff;
+        box-shadow:0 2px 10px rgba(0,0,0,0.08);z-index:100}
+    nav ul{display:flex;justify-content:center;gap:32px;list-style:none;padding:16px}
+    nav a{text-decoration:none;font-weight:600;color:var(--text);transition:.3s}
+    nav a:hover{color:var(--accent1)}
+    section{padding:80px 20px;max-width:1200px;margin:auto}
+    #hero{display:flex;flex-direction:column;align-items:center;justify-content:center;
+          text-align:center;height:90vh}
+    #hero h1{font-size:48px;font-weight:800;margin-bottom:12px}
+    #hero p{font-size:20px;color:var(--muted);margin-bottom:24px}
+    .btn{background:linear-gradient(135deg,var(--accent1),var(--accent2));
+         color:#fff;padding:12px 22px;border-radius:var(--radius);
+         font-weight:600;text-decoration:none;transition:.3s}
+    .btn:hover{opacity:.9}
+    h2{font-size:32px;margin-bottom:20px;text-align:center}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+    .skill{background:#f3f3f3;border:1px solid #eee;padding:8px 14px;
+           border-radius:20px;font-size:14px}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .service{border:1px solid #eee;padding:24px;border-radius:var(--radius);
+             background:#fafafa;transition:.3s;text-align:center}
+    .service:hover{border-color:var(--accent1)}
+    .service h3{margin-bottom:10px;color:var(--accent1)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+    .gallery-item{position:relative;cursor:pointer;overflow:hidden;border-radius:10px;
+                  height:0;padding-bottom:66.66%}
+    .gallery-item img{position:absolute;inset:0;width:100%;height:100%;
+                      object-fit:cover;transition:transform .4s}
+    .gallery-item:hover img{transform:scale(1.05)}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);
+              display:none;align-items:center;justify-content:center;z-index:200}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:92%;max-height:86%;border-radius:10px}
+    .close{position:absolute;top:20px;right:20px;font-size:32px;color:#fff;cursor:pointer}
+    footer{text-align:center;padding:20px;color:var(--muted);background:#fafafa;margin-top:40px}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="file:///C:/Users/jayar/Downloads/finn%20aaa.html#hero">Home</a></li>
+      <li><a href="file:///C:/Users/jayar/Downloads/finn%20aaa.html#about">About</a></li>
+      <li><a href="file:///C:/Users/jayar/Downloads/finn%20aaa.html#services">Services</a></li>
+      <li><a href="file:///C:/Users/jayar/Downloads/finn%20aaa.html#gallery">Gallery</a></li>
+      <li><a href="file:///C:/Users/jayar/Downloads/finn%20aaa.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <h1>JAYARAJ DANIEL</h1>
+    <p>Creative Graphic Designer • UI/UX • Visual Communication</p>
+    <a href="file:///C:/Users/jayar/Downloads/finn%20aaa.html#contact" class="btn">Hire Me</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Graphic Designer with expertise in visual communication, UI/UX, and digital branding. I specialize in creating compelling visuals that combine creativity and strategy to elevate brand identity and user experience.</p>
+    <div class="skills">
+      <div class="skill">Photoshop</div>
+      <div class="skill">Illustrator</div>
+      <div class="skill">UI/UX</div>
+      <div class="skill">Brand Identity</div>
+      <div class="skill">Campaign Creatives</div>
+      <div class="skill">Motion Graphics</div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service"><h3>Branding</h3><p>Crafting unique brand identities that resonate with your target audience.</p></div>
+      <div class="service"><h3>UI/UX Design</h3><p>Designing user-friendly digital interfaces with focus on accessibility and experience.</p></div>
+      <div class="service"><h3>Campaign Creatives</h3><p>Producing impactful visuals for marketing campaigns across digital platforms.</p></div>
+      <div class="service"><h3>Illustrations</h3><p>Custom illustrations tailored to storytelling and visual branding needs.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Portfolio Gallery</h2>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- 15 uploaded images -->
+      <div class="gallery-item"><img src="./finn aaa_files/wYn785" alt="Project 1"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/wYn785" alt="Project 2"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/wYn785" alt="Project 3"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/wYn785" alt="Project 4"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/wYn785" alt="Project 5"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/GfLf2Lm8" alt="Project 6"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/JFq48c8s" alt="Project 7"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/3m2fTsTv" alt="Project 8"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/gZB7QSd1" alt="Project 9"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/XrKYTfF1" alt="Project 10"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/xSVfXxVT" alt="Project 11"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/JWh8WVn9" alt="Project 12"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/saved_resource" alt="Project 13"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/q3VzR9FK" alt="Project 14"></div>
+      <div class="gallery-item"><img src="./finn aaa_files/8gswNCbr" alt="Project 15"></div>
+    </div>
+  </section>
+
+  <div class="lightbox open" id="lightbox">
+    <span class="close" id="lbClose">×</span>
+    <img id="lbImg" src="./finn aaa_files/xSVfXxVT" alt="">
+  </div>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s work together! Reach out via email, phone, or connect on Behance.</p>
+    <div class="skills">
+      <a class="btn" href="mailto:jayarajdaniel122003@gmail.com">Email</a>
+      <a class="btn" href="tel:+918925049642">Call</a>
+      <a class="btn" href="https://www.behance.net/djraj12" target="_blank">Behance</a>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year">2025</span> Jayaraj Daniel • All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const gallery=document.getElementById('galleryGrid');
+    const lb=document.getElementById('lightbox');
+    const lbImg=document.getElementById('lbImg');
+    const lbClose=document.getElementById('lbClose');
+    gallery.addEventListener('click',e=>{
+      const item=e.target.closest('.gallery-item'); if(!item)return;
+      const img=item.querySelector('img'); lbImg.src=img.src; lb.classList.add('open');
+    });
+    lbClose.addEventListener('click',()=>lb.classList.remove('open'));
+    lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open');});
+  </script>
+
+
+
+</body></html>
